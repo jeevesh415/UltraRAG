@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=82.0.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,7 +9,7 @@ description = "UltraRAG"
 readme = "README.md"
 requires-python = ">=3.11, <3.13"
 dependencies = [
-    "fastmcp==3.2.0",
+    "fastmcp==3.2.4",
     "mcp",
     "rich",
     "pandas",
@@ -29,6 +29,7 @@ dependencies = [
     "fakeredis",
     "pymilvus",
     "pypinyin",
+    "jieba",
     "charset-normalizer",
     "python-docx",
     "pymupdf",
@@ -54,7 +55,7 @@ retriever = [
 ]
 
 generation = [
-    "vllm>=0.19.0",
+    "vllm>=0.20.0",
     "openai",
     "transformers",
     "torch",
